@@ -1,0 +1,37 @@
+
+      <div class="row">
+        <div class="col-md-4">
+         <!-- <img src="{{poster}}" class="thumbnail"> -->
+         <img class="img-fluid" src="{{imdb_link}}">
+        </div>
+        <div class="col-md-8">
+          <h2>{{title}}</h2>
+          <p>Actor: {{actor}}</p>
+          <p>Director: {{director}}</p>
+          <p>Genre: {{genre}}</p>
+          <p>Released: {{release_date}}</p>
+          <p>Budget: {{budget}}</p>
+          <p>Ratings: {{ratings}}</p>
+          <p>Rotten Tomatoes: {{rotten_tomatoes}}</p>
+          <p>Awards: {{awards}}</p>
+          <p>Country: {{country}}</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="well">
+          <h3>Plot:</h3>
+          {{plot}}  
+        </div>
+      </div>
+      <div>
+          {{#if Reviews}}
+              <h4>Reviews:</h4>
+                  {{#each Reviews}}
+                       <p>User Review: {{reivew_body}}</p>
+                       <p>User rating: {{user_rating}}</p>
+                       <p>Date watched: {{watch_date}}</p>
+                   {{/each}}
+                {{/if}}
+           </div>
+           <hr>
+      
